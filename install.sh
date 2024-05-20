@@ -1,5 +1,10 @@
+#Iniciando Instalación . . .
+echo "Inicinado Instalación de paquetes Necesarios . . . "
 sudo apt install curl nitrogen rofi lxappearance picom numlockx pulseaudio pulseaudio-utils pavucontrol arc-theme papirus-icon-theme lolcat cmatrix psensor polybar tilix neofetch htop btop glances xarchiver pcmanfm synaptic gparted conky conky-all lxpolkit
 
+nitrogen
+
+echo "Instalando BRAVE BROWSER . . ."
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -7,6 +12,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 sudo apt update
 sudo apt install brave-browser
 
+echo "Instalando ULAUNCHER . . ."
 sudo wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
 sudo dpkg -i ulauncher_5.15.7_all.deb
 sudo apt-get install -f -y
@@ -50,14 +56,22 @@ echo "
 clear
 neofetch |lolcat -as 500
 
-alias sh1='sudo nano -m -l ~/.bashrc'
+alias sh1='sudo nano -l ~/.bashrc'
 alias up='sudo apt update && sudo apt upgrade -y'
 alias ne='clear && neofetch |lolcat -as 500'
 alias x='exit'
 alias i='cd ~ && ls -la'
-alias i3='sudo nano -m -l  ~/.config/i3/config'" >> ~/.bashrc
+alias nanno='sudo nano -l'
+alias i3='sudo nano -l  ~/.config/i3/config'" >> ~/.bashrc
 
 mv .conkyrc ~
 
+#Estableciendo Fondo de Pantalla
+sudo mv backgrounds /usr/share
+sudo mv bg-saved.cfg nitrogen.cfg ~/.config/nitrogen
+
 cmatrix
 neofetch |lolcat -as 500
+
+#Terminando la Instalación
+echo "Instalación Finalizada, modifique detalles menores en archivo /home/user/config y reinicie el equipo ....."
