@@ -27,6 +27,10 @@ mkdir /data/data/com.termux/files/home/.config
 mkdir /data/data/com.termux/files/home/.config/i3
 mv config /data/data/com.termux/files/home/.config/i3
 
+cd backgrounds/
+mv *.* /data/data/com.termux/files/usr/share/backgrounds/
+
+
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Instalando LOLCAT . . . \e[1;39;49m"
 wget https://github.com/busyloop/lolcat/archive/master.zip
 unzip master.zip
