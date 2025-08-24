@@ -29,8 +29,9 @@ mv config /data/data/com.termux/files/home/.config/i3
 
 cd backgrounds/
 mv *.* /data/data/com.termux/files/usr/share/backgrounds/
+CD ..
+mkdir /data/data/com.termux/files/home/.config/nitrogen
 mv bg-saved.cfg nitrogen.cfg /data/data/com.termux/files/home/.config/nitrogen
-cd ..
 
 
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Instalando LOLCAT . . . \e[1;39;49m"
