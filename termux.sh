@@ -29,7 +29,7 @@ mv config /data/data/com.termux/files/home/.config/i3
 
 cd backgrounds/
 mv *.* /data/data/com.termux/files/usr/share/backgrounds/
-CD ..
+cd ..
 mkdir /data/data/com.termux/files/home/.config/nitrogen
 mv bg-saved.cfg nitrogen.cfg /data/data/com.termux/files/home/.config/nitrogen
 
