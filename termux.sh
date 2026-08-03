@@ -10,20 +10,12 @@ pkg update && pkg upgrade -y
 #Instalación Paquetes Necesarios
 pkg install x11-repo -y
 pkg update
-pkg install xfce4 i3 tigervnc xorg-xrandr tilix ruby wget fastfetch vim htop w3m sc-im mc rofi lxappearance pipewire papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
+pkg install xfce4 i3 tigervnc xorg-xrandr tilix ruby wget fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
 
 #Colocando Password a servidor VNC . . .
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Colocando Password a servidor VNC,  . . . \e[1;39;49m"
 vncpasswd
 
-echo "#!/bin/sh
-xrdb $HOME/.Xresources
-i3 &" > ~/.vnc/xstartup
-
-
-#Iniciar el servidor VNC, poner la misma clave VNC, Esto levanta el servidor en localhost:5901 . . .
-echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Iniciar el servidor VNC, poner la misma clave VNC, Esto levanta el servidor en localhost:5901 . . . \e[1;39;49m"
-vncserver :1
 
 rm -rf *.rasi /data/data/com.termux/files/usr/share/rofi/themes
 mv -f themes /data/data/com.termux/files/usr/share/rofi
