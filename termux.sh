@@ -10,11 +10,7 @@ pkg update && pkg upgrade -y
 #Instalación Paquetes Necesarios
 pkg install x11-repo -y
 pkg update
-pkg install xfce4 i3 tigervnc xorg-xrandr tilix ruby wget fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
-
-#Colocando Password a servidor VNC . . .
-echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Colocando Password a servidor VNC,  . . . \e[1;39;49m"
-vncpasswd
+pkg install xfce4 i3 tigervnc xorg-xrandr tilix pipewire ruby wget fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
 
 
 rm -rf *.rasi /data/data/com.termux/files/usr/share/rofi/themes
