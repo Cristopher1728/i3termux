@@ -43,6 +43,7 @@ alias x='exit'
 alias i='cd ~ && ls -l'
 alias xfc='vncserver :1 -geometry 1280x720;export DISPLAY=:1;startxfce4 &'
 alias i3='vncserver :1 -geometry 1280x720;export DISPLAY=:1;i3 &'
+alias kill='vncserver -kill :1'
 
 echo '
 =====================================================
@@ -55,6 +56,7 @@ x = salir de terminal (Cttol + d)
 i = Dirigirse a la carpeta Home - listado archivos
 xfc = Inicia entorno gráfico Xfce En el puerto Localhost:5901
 i3 = Inicia entorno gráfico i3wm En el puerto Localhost:5901
+kill = Cierra Entorno Gráfico Actual
 ====================================================='" >> $PREFIX/etc/bash.bashrc
 
 clear
