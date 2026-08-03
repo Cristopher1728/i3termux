@@ -16,6 +16,11 @@ pkg install xfce4 i3 tigervnc xorg-xrandr tilix ruby wget fastfetch vim htop w3m
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Colocando Password a servidor VNC,  . . . \e[1;39;49m"
 vncpasswd
 
+echo "#!/bin/sh
+xrdb $HOME/.Xresources
+i3 &" > ~/.vnc/xstartup
+
+
 #Iniciar el servidor VNC, poner la misma clave VNC, Esto levanta el servidor en localhost:5901 . . .
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Iniciar el servidor VNC, poner la misma clave VNC, Esto levanta el servidor en localhost:5901 . . . \e[1;39;49m"
 vncserver :1
