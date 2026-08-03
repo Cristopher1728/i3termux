@@ -53,8 +53,8 @@ alias up='pkg upd && pkg upg -y'
 alias fa='clear && fastfetch'
 alias x='exit'
 alias i='cd ~ && ls -l'
-alias xfc='vncserver :1;export DISPLAY=:1;startxfce4 &'
-alias i3='vncserver :1;export DISPLAY=:1;i3 &'
+alias xfc='vncserver :1 -geometry 1280x720;export DISPLAY=:1;startxfce4 &'
+alias i3='vncserver :1 -geometry 1280x720;export DISPLAY=:1;i3 &'
 
 echo '
 =====================================================
