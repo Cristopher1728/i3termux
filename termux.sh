@@ -12,7 +12,8 @@ pkg install x11-repo -y
 pkg update
 pkg install xfce4 i3 tigervnc tilix firefox fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
 
-
+mkdir -p ~/.config
+mkdir -p /data/data/com.termux/files/usr/share/rofi
 rm -rf *.rasi /data/data/com.termux/files/usr/share/rofi/themes
 cp -r themes /data/data/com.termux/files/usr/share/rofi
 cp -r rofi ~/.config
