@@ -14,7 +14,7 @@ pkg install xfce4 i3 tigervnc tilix firefox fastfetch vim htop w3m sc-im mc rofi
 
 
 rm -rf *.rasi /data/data/com.termux/files/usr/share/rofi/themes
-mv -f themes /data/data/com.termux/files/usr/share/rofi
+cp -r themes /data/data/com.termux/files/usr/share/rofi
 cp -r rofi ~/.config
 
 mkdir /data/data/com.termux/files/home/.config
