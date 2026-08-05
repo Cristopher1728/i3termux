@@ -4,7 +4,8 @@
 #==============================================================\
 
 #Iniciando Instalación . . .
-echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Inicinado Instalación de paquetes Necesarios . . . \e[1;39;49m"
+echo -e "\e[1;37;45m* 🌍 ┼┼┼ >> Iniciando Instalación de paquetes Necesarios . . . \e[1;39;49m"
+
 termux-setup-storage
 pkg update && pkg upgrade -y
 #Instalación Paquetes Necesarios
