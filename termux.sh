@@ -11,7 +11,7 @@ pkg update && pkg upgrade -y
 #Instalación Paquetes Necesarios
 pkg install x11-repo -y
 pkg update
-pkg install xfce4 i3 tigervnc feh abiword gnumeric tilix firefox fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver pcmanfm curl -y
+pkg install xfce4 i3 tigervnc feh abiword gnumeric tilix firefox fastfetch vim htop w3m sc-im mc rofi lxappearance papirus-icon-theme cmatrix htop xarchiver unzip p7zip-full wget rsync pcmanfm curl -y
 
 mkdir -p ~/.config
 mkdir -p /data/data/com.termux/files/usr/share/rofi
