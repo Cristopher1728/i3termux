@@ -61,6 +61,4 @@ i3 = Inicia entorno gráfico i3wm En el puerto Localhost:5901
 kill = Cierra Entorno Gráfico Actual
 ====================================================='" >> $PREFIX/etc/bash.bashrc
 
-clear
-fastfetch
 echo -e "\e[1;37;45m* 🌎 ┼─┼┼┼─>> Instalación Finalizada, Disfrute del Sistema y Aplicaciones Instalados . . . \e[1;39;49m"
