@@ -29,12 +29,10 @@ exec --no-startup-id feh --bg-fill /data/data/com.termux/files/usr/share/backgro
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# screen before suspend. Use loginctl lock-session to lock your screen. --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -233,11 +231,11 @@ bar {
 bindsym $mod+d exec --no-startup-id rofi -show drun -font 'hack 13' -show combi -icon-theme 'Papirus' -show-icons
 
 #Paquetes que se ejecutan al Inicio
-exec --no-startup-id lxpolkit
-exec --no-startup-id picom
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id conky
-exec --no-startup-id connman-gtk
+#exec --no-startup-id lxpolkit
+#exec --no-startup-id picom
+#exec --no-startup-id nitrogen --restore
+#exec --no-startup-id conky
+#exec --no-startup-id connman-gtk
 
 #Ejecutar espaciado entre ventanas
 gaps outer 2
